@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f0f0f0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.logo {
+    width: 200px;
+    height:100px;
+}
+
+.menu {
+    position: relative;
+    width: 200px;
+    text-align: center;
+    display: inline-block;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    margin-right: 20px;
+    list-style: none;
+    font-weight: bold;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.submenu a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    margin: 10px;
+}
+
+header>div {
+    margin: 20px;
+}
+
+.submenu a:hover {
+    background-color: #d9d9d9;
+}
+  
+.menu:hover .submenu {
+    display: block;
+}
+
+.header-dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 150px;
+}
+
+.dropdown-content-header {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 50px;
+    right: 13px;
+}
+
+.dropdown-content-header a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content-header a:hover {
+    background-color: #d9d9d9;
+}
+
+.header-dropdown:hover .dropdown-content-header {
+    display: block;
+}
+
+.dropdown-button-header {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.img {
+    width: 60px;
+    height: 60px;
+}
+
+.img-down-block {
+    margin-top: -270px;
+    width: 440px;
+    height: 110px;
+    display:flex;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    margin-left: 1000px;
+    background-color: white;
+}
+
+.i-d-b {
+    width: 200px;
+    height: 80px;
+    margin: 10px;
+}
+
+.img-mid-block {
+    margin-top: -180px;
+    width: 340px;
+    height: 80px;
+    display:flex;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    margin-left: 1050px;
+    background-color: white;
+}
+
+.i-m-b {
+    width: 100px;
+    height: 60px;
+    margin: 10px;
+}
+
+
+.img-up-block {
+    margin-top: -160px;
+    width: 240px;
+    height: 90px;
+    display:flex;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    margin-left: 1100px;
+    background-color: white;
+}
+
+.i-u-b {
+    width: 100px;
+    height: 60px;
+    margin: 15px;
+}

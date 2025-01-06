@@ -1,0 +1,83 @@
+main {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+h1 {
+    color: #395a85;
+    font-size: 60px;
+    font-weight: 900;
+    margin: 10px 50px;
+    margin-top: 50px;
+}
+
+.checkmark {
+    color: white;
+    background-color: #395a85;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.paragraph {
+    font-size: 25px;
+    margin: 10px 95px;
+}
+
+.paragraph div {
+    display: flex;
+    gap: 10px;
+}
+
+.subhead {
+    font-size:25px;
+    margin: 27px 50px;
+}
+
+
+.icons-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons-panel>div {
+    height: 140px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border: 2px solid #bbb;
+    border-radius: 40px;
+    background-color: white;
+    margin-top: -40px;
+}
+
+.icons-panel>div:nth-child(1) {
+    width: 240px;
+}
+
+.icons-panel>div:nth-child(2) {
+    width: 340px;
+    z-index: 1;
+}
+
+.icons-panel>div:nth-child(3) {
+    width: 440px;
+    z-index: 2;
+}
+
+.icons-panel p {
+    text-align: center;
+    margin: 0;
+}
+
+.icons-panel img {
+    width: 80px;
+    height: 80px;
+}

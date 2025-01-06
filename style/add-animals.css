@@ -1,0 +1,228 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.search-form {
+    border-radius: 5px;
+    width: 80%;
+    padding: 15px;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+}
+
+.dropdown-content-filter {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    padding-left: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 60px;
+    right: 1px;
+}
+
+.dropdown-content-filter li div {
+    color: black;
+    padding: 8px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content-filter li:hover {
+    background-color: #d9d9d9;
+}
+
+.dropdown-content-filter ul {
+    padding: 0px;
+}
+
+.dropdown-content-filter input{
+    max-width: 15px;
+    margin-right: 15px;
+}
+
+.filter-dropdown:hover .dropdown-content-filter {
+    display: block;
+}
+
+.dropdown-button-filter {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+}
+
+.img-menu {
+    width: 53px;
+    height: 53px;
+}
+
+
+
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.form-container>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.petResults, .feedResults {
+    margin: 0 0 0 50px;
+}
+
+.button {
+    border: none; 
+}
+.block-animals {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 450px;
+    height: 150px;
+    max-height: 150px;
+    border: 2px solid #ccc;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+.block-animals:hover {
+    background-color: #cccbc9;
+}
+
+.img-block {
+    width: 135px;
+    height: 135px;
+    background: linear-gradient(0.25turn, #222f52, #537692);
+    border-radius: 50%;
+    padding-top: 5px;
+}
+
+.photo-text {
+    font-size: 85px;
+    color: #fff;
+}
+
+.img-block img {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+}
+
+.animal-info {
+    width: 250px;
+    text-align: start;
+}
+
+.selectPetDiv {
+    position: relative;
+    height: 100%;
+}
+
+.block-animals input[type="checkbox"] {
+    position: absolute;
+    top: -12px;
+    right: -25px;
+    width: 30px;
+    height: 30px;
+}
+
+h3 {
+    text-align: center;
+}
+
+
+
+.block-feeds {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 450px; 
+    height: 150px; 
+    border: 2px solid #ccc;
+    background-color: #fff;
+    margin-bottom: 20px;
+
+}
+
+.block-feeds:hover {
+    background-color: #d9d9d9;
+}
+
+.block-feeds input {
+    width: 80%;
+    height: 30px;
+    border: 1px solid #a6a6a6;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.feed-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+}
+
+.block-feeds button {
+    width: 60%;
+    margin: 10px 0;
+    border: 1px solid #a6a6a6;
+    border-radius: 5px;
+}
+
+.feed-split input:nth-child(2) {
+    margin: 10px 0 0 auto;
+}
+
+.feed-split button {
+    width: 80%;
+}
+
+button[name="delete"] {
+    margin: 10px 0 10px auto;
+}
+
+
+
+div[name="calcDiv"]>div>div {
+    display: flex;
+    justify-content: center;
+}
+
+div[name="calcDiv"] button {
+    width: 150px;
+    height: 40px;
+    margin: 10px;
+    border: 1px solid #a6a6a6;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+div[name="calcDiv"] p {
+    width: 450px;
+    padding: 10px;
+    border: 1px solid #a6a6a6;
+    border-radius: 5px;
+}
+
+
+
+.hiddenObject {
+    display: none !important;
+}
